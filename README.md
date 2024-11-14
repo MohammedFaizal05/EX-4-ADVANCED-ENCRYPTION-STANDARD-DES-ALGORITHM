@@ -1,4 +1,9 @@
-# EX-7-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+# EX-8-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+
+
+## NAME:MOHAMMED FAIZAL J
+## REG NO:212222100027
+
 
 ## Aim:
   To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
@@ -11,11 +16,6 @@
 
 ## PROGRAM: 
 ```
-Name: MOHAMMED FAIZAL J
-Register Number: 212222100027
-```
-
-```C
 #include <stdio.h>
 #include <string.h>
 
@@ -25,31 +25,32 @@ int input_len = strlen(input);
 int key_len = strlen(key);
 
 for (int i = 0; i < input_len; i++) {
-    input[i] = input[i] ^ key[i % key_len]; // XOR encryption
+    input[i] = input[i] ^ key[i % key_len];
 }
 }
 
 int main() {
-char url[] = "https://lms2.cse.saveetha.in";
-char key[] = "secretkey"; // Simple key for XOR encryption
+    printf("\n\n\n\n      ***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n\n");
+    
+char url[] = "WELCOME";
+char key[] = "secretkey"; 
 
-printf("Original URL: %s\n", url);
+printf("Original text: %s\n", url);
 
-// Encrypt the URL
 xor_encrypt_decrypt(url, key);
-printf("Encrypted URL: %s\n", url);
+printf("Encrypted text: %s\n", url);
 
-// Decrypt the URL (since XOR is reversible using the same key)
 xor_encrypt_decrypt(url, key);
-printf("Decrypted URL: %s\n", url);
+printf("Decrypted text: %s\n", url);
 
 return 0;
 }
 ```
-## OUTPUT:
-![Screenshot 2024-09-30 115354](https://github.com/user-attachments/assets/2d48d63c-1684-4b28-83b3-ebeb7b4108a6)
 
+
+## OUTPUT:
+
+![Screenshot 2024-11-14 183655](https://github.com/user-attachments/assets/87e0c330-f30c-46aa-81d4-b387fc59f14c)
 
 ## RESULT: 
-
-Hence,to use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption is done successfully.
+The execution program is successfully executed.
